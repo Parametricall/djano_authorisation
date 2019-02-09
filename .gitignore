@@ -1,3 +1,11 @@
+workspace.xml
+usage.statistics.xml
+tasks.xml
+.idea/*.iml
+modules.xml
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

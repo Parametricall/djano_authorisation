@@ -1,0 +1,36 @@
+{% extends 'auth/base.html' %}
+
+{% block content %}
+    <div class="row"></div>
+    <div class="container">
+
+    <form method="POST" action="">
+    {% csrf_token %}
+    {{ formset.management_form }}
+
+{#    <table class="striped centered highlight">#}
+{#        <thead>#}
+{#        <tr>#}
+{#            <th>Username</th>#}
+{#            <th>Email</th>#}
+{#        </tr>#}
+{#        </thead>#}
+{#        <tbodY>#}
+        {{ formset }}
+{#            {% for form in formset %}#}
+{#            <tr>#}
+{#            {{ form.errors }}#}
+{#                {% for field in form %}#}
+{#                    <td>#}
+{#                        {{ field }}#}
+{#                    </td>#}
+{#                {% endfor %}#}
+{#            </tr>#}
+
+{#                {% endfor %}#}
+{#        </tbodY>#}
+{#    </table>#}
+    </form>
+    </div>
+
+{% endblock content %}

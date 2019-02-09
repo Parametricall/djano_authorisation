@@ -1,0 +1,21 @@
+{% extends 'auth/base.html' %}
+
+{% block content %}
+    <div class="row"></div>
+    <div class="container">
+        <form method="post" class="col s12" action="">
+          {% csrf_token %}
+
+          {% for field in form %}
+              <div class="row">
+                  <div class="input-field col s12">
+                      {{ field }}
+                      {{ field.label_tag }}
+                  </div>
+              </div>
+          {% endfor %}
+
+          <input type="submit" name="create_user" value="Create User" id="create">
+        </form>
+    </div>
+{% endblock content %}

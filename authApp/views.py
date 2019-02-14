@@ -15,7 +15,7 @@ from authApp.forms import *
 
 # Create your views here.
 def index(request):
-    return render(request, r'auth\base.html', {'person_id': 1})
+    return render(request, r'authApp\base.html', {'person_id': 1})
 
 
 def detail(request, person_id):
@@ -27,7 +27,7 @@ def detail(request, person_id):
     if request.method == 'POST':
         form = UserForm(request, instance=user)
 
-    return render(request, 'auth\profile.html', {'form': form, 'person_id': person_id})
+    return render(request, 'authApp\profile.html', {'form': form, 'person_id': person_id})
 
 def create_user_view(request):
 
@@ -51,7 +51,7 @@ def create_user_view(request):
         'form': form,
     }
 
-    return render(request, 'auth\create.html', context)
+    return render(request, 'authApp\create.html', context)
 
 def user_formset_view(request):
 
@@ -75,7 +75,7 @@ def user_formset_view(request):
         'formset': formset,
     }
 
-    return render(request, 'auth/users.html', context)
+    return render(request, 'authApp\users.html', context)
 
 
 

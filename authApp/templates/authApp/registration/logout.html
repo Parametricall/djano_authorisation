@@ -2,11 +2,10 @@
 
 {% block body %}
     <div class="container">
-        <h2>Login</h2>
-        <form method="post" action="{% url 'auth:index' %}">
+        <h2>You have successfully logged out</h2>
+        <form method="post" action="{% url 'auth:login' %}">
             {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit">Login</button>
+            <button type="submit">Login Again</button>
         </form>
     </div>
 {% endblock body %}

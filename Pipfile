@@ -7,7 +7,7 @@ verify_ssl = true
 wheel = "*"
 
 [packages]
-django = "*"
+django = ">=2.1.6"
 ddjango_authorisation = {editable = true, path = "."}
 
 [requires]

@@ -1,14 +1,18 @@
 from django.db import migrations
 from django.contrib.auth.models import User as DjangoUser
 
-from authApp.models import Profile
+from authApp.models import User
 
 
 def create_users(apps, schema_editor):
     if apps and schema_editor:
         pass
 
-    DjangoUser.objects.create_user(username='admin', password='admin')
+    User.objects.create_user(
+        username='admin',
+        email="admin@example.com",
+        password='admin'
+    )
 
 
 class Migration(migrations.Migration):

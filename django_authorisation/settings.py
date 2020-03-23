@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'authApp'
+    'authApp',
+    'my_profile',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'django_authorisation.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -122,3 +123,6 @@ STATIC_URL = '/static/'
 
 
 LOGIN_REDIRECT_URL = '/'
+
+BASE_TEMPLATE = "default/base.html"
+BASE_WITH_HEADER_TEMPLATE = "default/base_with_header.html"

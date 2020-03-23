@@ -1,9 +1,9 @@
 from django import forms
 # from django.contrib.auth import login
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User as DjangoUser
 from django.forms.models import BaseModelFormSet
 
-# from auth.models import Profile
+from authApp.models import User
 
 
 class UserForm(forms.ModelForm):

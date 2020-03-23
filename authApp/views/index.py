@@ -1,10 +1,11 @@
 from django.contrib.auth import authenticate, login
 from django.shortcuts import render
 from django.views import View
+from django.conf import settings
 
 
 class IndexView(View):
-    template_name = "authApp/base_with_header.html"
+    template_name = settings.BASE_WITH_HEADER_TEMPLATE
 
     def get(self, request):
         context = {}

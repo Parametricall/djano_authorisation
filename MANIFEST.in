@@ -1,4 +1,0 @@
-include LICENSE
-include README.rst
-recursive-include authApp/static *
-recursive-include authApp/templates *

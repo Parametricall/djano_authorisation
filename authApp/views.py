@@ -8,14 +8,12 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.models import User as DjangoUser
 from django.urls import reverse
 
-from authApp.forms import UserForm
-from authApp.models import Profile
 from authApp.forms import *
 # from auth.models import User
 
 # Create your views here.
 def index(request):
-    return render(request, r'authApp\base.html', {'person_id': 1})
+    return render(request, r'authApp\users.html', {'person_id': 1})
 
 
 def detail(request, person_id):

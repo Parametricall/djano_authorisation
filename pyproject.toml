@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "base_app"
-version = "0.0.3"
+version = "0.0.4"
 description = ""
 authors = ["Parametricall <22248105+Parametricall@users.noreply.github.com>"]
 

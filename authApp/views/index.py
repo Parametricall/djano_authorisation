@@ -5,7 +5,7 @@ from django.conf import settings
 
 
 class IndexView(View):
-    template_name = settings.BASE_WITH_HEADER_TEMPLATE
+    template_name = "authApp/base.html"
 
     def get(self, request):
         context = {}

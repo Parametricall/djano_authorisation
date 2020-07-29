@@ -123,6 +123,3 @@ STATIC_URL = '/static/'
 
 
 LOGIN_REDIRECT_URL = '/'
-
-BASE_TEMPLATE = "base_app/base.html"
-BASE_WITH_HEADER_TEMPLATE = "base_app/base_with_header.html"

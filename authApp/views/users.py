@@ -22,6 +22,5 @@ class UsersView(View):
     def get(self, request):
         context = {
             "formset": self.formset,
-            'extended_template': settings.BASE_WITH_HEADER_TEMPLATE,
         }
         return render(request, self.template_name, context)

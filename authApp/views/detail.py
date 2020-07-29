@@ -17,6 +17,5 @@ class DetailView(View):
         context = {
             'form': form,
             'person_id': person_id,
-            'extended_template': settings.BASE_WITH_HEADER_TEMPLATE,
         }
         return render(request, self.template_name, context)
